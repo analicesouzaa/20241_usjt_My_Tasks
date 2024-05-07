@@ -5,11 +5,27 @@
     <meta charset="UTF-8">
     <title> MyTasks - Aprendendo Programação</title>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.8/dist/axios.min.js"></script>
+    <style>
+        .retangulo {
+            background-color: rgba(15, 15, 24, 0.445); /* cor de fundo do retângulo */
+            height: 100%;
+            margin: 10vh;
+        }
+    
+        #acao{
+            text-align: center;
+        }
+    </style>
 </head>
     <body>
-        <label> Digite a pergunta: <input type="text" id="prompt"></label> 
-        <button onclick="enviar()"> Perguntar </button>
+        <div class="retangulo">
+        <label><p id="acao"> Digite a pergunta:</p> <br><input type="text" id="prompt"></label> <br>
+        <button onclick="enviar()" id="questionbutton"> Perguntar </button> <br>
         <input type="text" id="completion">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Centralizar Retângulo</title>
+        </div>
         <script>
             function enviar(){
                 const pergunta = document.getElementById("prompt").value;
